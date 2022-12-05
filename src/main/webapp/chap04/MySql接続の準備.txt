@@ -1,0 +1,9 @@
+// Database接続情報の設定
+String url = "jdbc:mysql://localhost/selfjsp";
+String usr = "root";
+String pw = "";
+
+// Databaseへ接続
+Connection cn = DriverManager.getConnection(url, usr, pw);
+DatabaseMetaData dm = cn.getMetaData();
+
